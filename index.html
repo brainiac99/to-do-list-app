@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="dark">
+    <div class="container">
+      <div class="bg">
+        <div class="bg-content">
+          <h1 class="logo">todo</h1>
+          <button class="theme">
+            <img src="./images/icon-sun.svg" alt="light theme" />
+            <img class="hidden" src="/images/icon-moon.svg" alt="dark theme" />
+          </button>
+        </div>
+      </div>
+      <main class="main">
+        <div class="new-list-item">
+          <button class="add-new">
+            <img src="./images/icon-cross.svg" alt="add new todo" />
+          </button>
+          <input
+            type="text"
+            class="new-todo"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <div class="todo-list">
+          <ul class="list"></ul>
+          <div class="summary">
+            <p class="items-left">0 items left</p>
+            <button class="clear">Clear Completed</button>
+          </div>
+        </div>
+        <div class="sort">
+          <button class="sort-all current-assortment">All</button>
+          <button class="sort-active">Active</button>
+          <button class="sort-completed">Completed</button>
+        </div>
+        <p class="drag">Drag and drop to reorder list</p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
