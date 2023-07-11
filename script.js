@@ -91,6 +91,7 @@ btnClear.addEventListener("click", () => {
   toBeRemoved.reverse().forEach((i) => {
     todo.splice(i, 1);
   });
+  toBeRemoved = [];
   updateCount();
 });
 
