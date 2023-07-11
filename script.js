@@ -2,7 +2,7 @@
 
 const newTodo = document.querySelector(".new-todo");
 const todo = [];
-const toBeRemoved = [];
+let toBeRemoved = [];
 const addNew = document.querySelector(".add-new");
 const todoList = document.querySelector(".list");
 
